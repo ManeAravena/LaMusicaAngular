@@ -1,0 +1,6 @@
+<div class="detalle-artista text-center" *ngIf="artista">
+  <h2 class="display-2">{{artista.nombre}}</h2>
+  <p> Fecha de Nacimiento <br> {{artista.fechaNacimiento}}</p>
+  <p> Nacionalidad <br> {{artista.nacionalidad}}</p>
+  <button type="button" class="btn btn-dark" (click)="onCerrar()">Cerrar</button>
+</div>

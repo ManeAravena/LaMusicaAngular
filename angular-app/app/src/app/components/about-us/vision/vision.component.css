@@ -1,0 +1,12 @@
+img {
+    width: 30%;
+    margin: 20px 30px;
+}
+.texto {
+    padding: 10px 40px;
+}
+
+.contenedor {
+    justify-content: space-between;
+    margin-top: 30px;
+}

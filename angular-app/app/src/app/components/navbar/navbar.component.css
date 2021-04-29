@@ -1,0 +1,22 @@
+.navbar { 
+    background-color: black;
+}
+.navbar img {
+    height: 60px;
+}
+.navbar {
+    
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+   width: 100%; /* Full width */
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a {
+    margin: 0 30px;
+}

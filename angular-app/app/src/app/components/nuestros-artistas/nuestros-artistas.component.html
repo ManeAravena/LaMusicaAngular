@@ -1,0 +1,15 @@
+<div class="contenedor">
+    <h1>NUESTROS ARTISTAS</h1>
+    <div class="d-flex">
+        <ngb-carousel class="carousel">
+            <ng-template ngbSlide *ngFor="let artista of lista">
+                <img (click)="onClick(artista)" class="d-block w-100" [src]="artista.foto" alt="{{artista.foto}}" />
+                <div class="carousel-caption">
+                    <h2>{{artista.nombre}}</h2>
+                    <button type="button" class="btn btn-dark" (click)="onClick(artista)">Ver mas</button>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+        <app-detalles [artista]="artista" (cerrar)="cerrarDetalles()"></app-detalles>
+    </div>
+</div>
